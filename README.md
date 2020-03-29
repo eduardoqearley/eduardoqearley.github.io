@@ -1,1 +1,0 @@
-# eduardoqearley.github.io

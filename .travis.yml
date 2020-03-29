@@ -9,8 +9,10 @@ install:
   - pip install -U pip
   - pip install -r requirements.txt # install the required packages
   - pip install sphinx_rtd_theme
+  # - pip install --user travis-sphinx  
 script:
   - skip # Travis requires a `script` property, but we do not need it
+  # - travis-sphinx build
 stages:
   - build and test
   - deploy
@@ -19,7 +21,7 @@ jobs:
   include:
     - stage: build and test and deploy
       name: Main job
-      if: (NOT type IN (pull_request)) AND (branch = master) # only deploy if merging on master
+   #   if: (NOT type IN (pull_request)) AND (branch = master) # only deploy if merging on master
       script: make html
       deploy:
         provider: pages # deploy on github pages
