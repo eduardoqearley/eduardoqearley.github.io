@@ -28,4 +28,5 @@ jobs:
         github_token: "$GITHUB_TOKEN" # defined via the Travis interface
         local_dir: build/html
         verbose: true
+        target_branch: master
  
