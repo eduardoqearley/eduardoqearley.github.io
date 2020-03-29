@@ -23,8 +23,6 @@ jobs:
       script: make html
       deploy:
         provider: pages # deploy on github pages
-        skip_cleanup: true
-        keep_history: true
         github_token: "$GITHUB_TOKEN" # defined via the Travis interface
         local_dir: build/html
         verbose: true
