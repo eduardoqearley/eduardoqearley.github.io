@@ -1,6 +1,0 @@
-Authors
--------
-
-* Edward Q Earley
-
-
